@@ -352,7 +352,7 @@ int WT61C_ParseByte(WT61C_CTRL *wt61c, uint8_t dat)
 
                 if( sum != wt61c->linebuf[10])
                 {
-                    printf("Checksum error");
+                    fprintf(stderr, "Checksum error");
                 }
                 else
                 {
